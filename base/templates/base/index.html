@@ -4,18 +4,48 @@
 
 {% block title %} Welcome {% endblock %}
 
-{% block content %}
+{% block banner-slider %} 
 
-    <body>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{% static 'base/images/banner/b1.jpg' %}" class="d-block w-100" alt="banner image">
+        </div>
+        <div class="carousel-item active">
+            <img src="{% static 'base/images/banner/b2.jpg' %}" class="d-block w-100" alt="banner image">
+        </div>
+        <div class="carousel-item active">
+            <img src="{% static 'base/images/banner/b3.jpg' %}" class="d-block w-100" alt="banner image">
+        </div>
+        <div class="carousel-item active">
+            <img src="{% static 'base/images/banner/b4.jpg' %}" class="d-block w-100" alt="banner image">
+        </div>
+        </div>
+    </div>
+
+{% endblock banner-slider %}
+
+{% block information %}
+<div class="container">
+    <div class="row bg-success text-center p-5 text-white border-bottom shadow">
+        <h1>Products</h1>
+        <small class="fs-5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
         
-        <div class="">
+        Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. 
+        </small>
 
-            <h2>The home page</h2>
+    </div>
+</div>
+{% endblock information %}
+
+{% block content %}
+    <div class="container">
+        <h2 class="text-center">Dairy Products</h2>
+        <br><br>
+
+        <div class="row container">
 
         </div>
-
-
-    </body>
-
-
-{% endblock %}
+    </div>
+    <br><br>
+{% endblock content %}
